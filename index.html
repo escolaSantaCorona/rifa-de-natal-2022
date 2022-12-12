@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  <title>Rifa de Natal EMEF Santa Corona</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="boneco">
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="./Sources/menu-direito.png" alt="">
+    </div>
+    <div class="menu-esquerdo">
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="./Sources/menu-esquerdo.png" alt="">
+    </div>
+    <section class="sorteio-form">
+      <div class="box-header">
+        <img class="img1" src="./Sources/Image-10.png" alt="">
+      </div>
+      <img class="img2" src="./Sources/divisor.png" alt="">
+      <div class="form-min-max">
+        <div class="box-resultado">
+          <h1>Sorteio da Rifa de Natal</h1>
+          <h1 id="randomNumber">0</h1>
+        </div>
+        <div class="box-inputs">
+          <div class="box-input-min" style="display: none;">
+            <span class="input-min-text" id="min">Min</span>
+            <input type="number" name="num1" id="num1" value=1 class="form-control" placeholder="min" max=999999 onfocusout="setMax()">
+          </div>
+          <div class="box-input-max" style="display: none;">
+            <span class="input-max-text" id="max">Max</span>
+            <input type="number" name="num2" id="num2" value=3780 class="form-control" placeholder="min" max=999999 onfocusout="setMax()">
+          </div>
+        </div>
+      </div>
+      <div class="box-resultado">
+        <div class="box-numeros-sorteados">
+          <h3 for="id">NUMEROS SORTEADOS</h3>
+          <br>
+          <input id="number" class="form-control">
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class="box-button">
+        <button class="btn btn-primary btn-block" onclick="generateRandom()">Sortear</button>
+      </div>
+      <img class="img3" src="./Sources/divisor2.png" alt="">
+    </section>
+  </div>
+ 
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
